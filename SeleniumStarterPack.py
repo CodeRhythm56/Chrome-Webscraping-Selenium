@@ -10,9 +10,8 @@ wait = WebDriverWait(driver)
 
 #functions
 driver.get("https://www.messenger.com")
-driver.find_element_by_xpath().click()
 wait.until(EC.presence_of_element_located(By.XPATH()))
-
+driver.find_element_by_xpath().click()
 
 driver.quit()
 
