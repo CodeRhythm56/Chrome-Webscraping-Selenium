@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 #declaration/setup
 driver = webdriver.Chrome()
-wait = WebDriverWait(driver)
+wait = WebDriverWait(driver, 20)
 
 #functions
 driver.get("https://www.messenger.com")
